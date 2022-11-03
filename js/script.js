@@ -96,7 +96,7 @@ input.addEventListener('keyup', async function(e){
             img.src = `${objeto.sprites.other.dream_world.front_default}`;
             a.href = `detalles.html?id=${objeto.name}`;
             a.innerHTML = 'Ver detalles';
-            a.id = `${pokemon.name}`;
+            a.id = `${objeto.name}`;
             div.append(h4, img, a);
             contenedor.append(div);
         }
@@ -141,5 +141,5 @@ function obtenerBtnDetalles(){
         })
     });
 }
-//Se ejecuta la función 1,5 segundos después, para que cargue el listado de pokémon
-setTimeout(obtenerBtnDetalles, 1500);
+//Se ejecuta la función 1 segundo después, para que cargue el listado de pokémon
+setTimeout(obtenerBtnDetalles, 1000);
