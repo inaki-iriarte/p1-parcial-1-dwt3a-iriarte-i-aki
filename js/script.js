@@ -100,6 +100,7 @@ input.addEventListener('keyup', async function(e){
             div.append(h4, img, a);
             contenedor.append(div);
         }
+        obtenerBtnDetalles();
     }
     
     //Cuando se borra el contenido del buscador regresa la lista completa
